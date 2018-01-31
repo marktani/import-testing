@@ -1,0 +1,13 @@
+type Article {
+  id: ID! @unique
+  featuredImage: String
+  summary: String
+  publishedAt: DateTime
+  url: String
+  source: Source
+}
+
+type Source {
+  id: ID! @unique
+  slug: String! @unique
+}

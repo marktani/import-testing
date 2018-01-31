@@ -1,0 +1,17 @@
+{
+  "name": "import",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "graphql-request": "1.2.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^1.4.0"
+  },
+  "scripts": {
+    "start": "dotenv -- node script.js",
+    "start-works": "dotenv -e .env.works -- node script.js"
+  }
+}
