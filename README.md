@@ -6,12 +6,6 @@ Experimenting with batch mutations with Prisma
 
 Update: check https://github.com/graphcool/prisma/issues/2060
 
-Based on https://github.com/graphcool/prisma/issues/1788, I started to play around with hammering Prisma services with a lot of HTTP requests. During my experiments, I found out that using nested mutations, it's super easy to run into "Caused by: java.sql.SQLException: Deadlock found when trying to get lock; try restarting transaction" exceptions.
-
-Note that this error is only reproducible against the local cluster. It is not reproducible against eu1.
-
-I don't know if the error I encounter is the underlying issue for the referenced bug report on Github.
-
 ## Reproduction
 
 ```
